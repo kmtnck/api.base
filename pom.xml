@@ -5,10 +5,10 @@
 
 	<groupId>it.alessandromodica.open</groupId>
 	<artifactId>api.base</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<packaging>pom</packaging>
 
-	<name>api</name>
+	<name>Api Open</name>
 	<description>Rappresenta la base di tutti i prodotti open. Sono messi a fattor comunee procedure strettamente legate al deploy. Per ora</description>
 	<url>https://github.com/kmtnck</url>
 
