@@ -21,11 +21,11 @@
 
 	<distributionManagement>
 		<repository>
-			<id>yanexus</id>
+			<id>yanexus-release</id>
 			<url>http://alessandromodica.com:8081/nexus/repository/maven-releases</url>
 		</repository>
 		<snapshotRepository>
-			<id>yanexus</id>
+			<id>yanexus-snapshot</id>
 			<url>http://alessandromodica.com:8081/nexus/repository/maven-snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>
