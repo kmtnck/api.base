@@ -12,6 +12,11 @@
 	<description>Rappresenta la base di tutti i prodotti open. Sono messi a fattor comunee procedure strettamente legate al deploy. Per ora</description>
 	<url>https://github.com/kmtnck</url>
 
+	<scm>
+		<connection>scm:git:https://github.com/kmtnck/${project.artifactId}.git</connection>
+		<developerConnection>scm:git:https://github.com/kmtnck/${project.artifactId}.git</developerConnection>
+	</scm>
+
 	<distributionManagement>
 		<repository>
 			<id>yanexus</id>
@@ -56,7 +61,7 @@
 
 	<build>
 		<plugins>
-	
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-deploy-plugin</artifactId>
@@ -66,7 +71,7 @@
 					<skip>true</skip>
 				</configuration>
 			</plugin>
-	
+
 			<plugin>
 				<groupId>org.sonatype.plugins</groupId>
 				<artifactId>nexus-staging-maven-plugin</artifactId>
@@ -86,7 +91,7 @@
 					<skipStaging>true</skipStaging>
 				</configuration>
 			</plugin>
-			
+
 			<!-- <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-toolchains-plugin</artifactId> 
 				<version>1.1</version> <executions> <execution> <goals> <goal>toolchain</goal> 
 				</goals> </execution> </executions> <configuration> <toolchains> <jdk> <version>${maven.toolchains.sdk}</version> 
@@ -151,6 +156,36 @@
 				</configuration>
 			</plugin>
 
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-scm-plugin</artifactId>
+				<dependencies>
+					<dependency>
+						<groupId>org.codehaus.plexus</groupId>
+						<artifactId>plexus-utils</artifactId>
+						<version>2.1</version>
+					</dependency>
+					<dependency>
+						<groupId>org.apache.maven.scm</groupId>
+						<artifactId>maven-scm-provider-gitexe</artifactId>
+						<version>1.2</version>
+					</dependency>
+				</dependencies>
+				<version>1.0</version>
+				<configuration>
+					<tag>${project.version}_${buildDate}</tag>
+					<connectionType>connection</connectionType>
+				</configuration>
+				<executions>
+					<execution>
+						<id>tag</id>
+						<phase>deploy</phase>
+						<goals>
+							<goal>tag</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
 </project>
