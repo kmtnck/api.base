@@ -11,8 +11,8 @@
 	<url>https://github.com/kmtnck</url>
 
 	<scm>
-		<connection>scm:git:https://github.com/kmtnck/api.base.git</connection>
-		<developerConnection>scm:git:https://github.com/kmtnck/api.base.git</developerConnection>
+		<connection>scm:git:https://github.com/kmtnck/${project.artifactId}.git</connection>
+		<developerConnection>scm:git:https://github.com/kmtnck/${project.artifactId}.git</developerConnection>
 		<url>https://github.com/kmtnck/api.base.git</url>
 		<tag>HEAD</tag>
 	</scm>
