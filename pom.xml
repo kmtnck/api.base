@@ -3,7 +3,7 @@
 
 	<groupId>it.alessandromodica.open</groupId>
 	<artifactId>api.base</artifactId>
-	<version>1.0.4-SNAPSHOT</version>
+	<version>1.0.4</version>
 	<packaging>pom</packaging>
 
 	<name>Api Open</name>
@@ -14,7 +14,7 @@
 		<connection>scm:git:https://github.com/kmtnck/${project.artifactId}.git</connection>
 		<developerConnection>scm:git:https://github.com/kmtnck/${project.artifactId}.git</developerConnection>
 		<url>https://github.com/kmtnck/api.base.git</url>
-		<tag>HEAD</tag>
+		<tag>v1.0.4.2020.07.10.2118</tag>
 	</scm>
 
 	<distributionManagement>
