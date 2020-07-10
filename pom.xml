@@ -5,7 +5,7 @@
 
 	<groupId>it.alessandromodica.open</groupId>
 	<artifactId>api.base</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>Api Open</name>
@@ -105,6 +105,7 @@
 				<configuration>
 					<show>private</show>
 					<nohelp>true</nohelp>
+					<skip>true</skip>
 				</configuration>
 			</plugin>
 
@@ -177,7 +178,7 @@
 					<tag>${project.version}_${buildDate}</tag>
 					<connectionType>connection</connectionType>
 				</configuration>
-				<executions>
+				<!-- <executions>
 					<execution>
 						<id>tag</id>
 						<phase>deploy</phase>
@@ -185,7 +186,7 @@
 							<goal>tag</goal>
 						</goals>
 					</execution>
-				</executions>
+				</executions>-->
 			</plugin>
 		</plugins>
 	</build>
