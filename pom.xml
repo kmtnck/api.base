@@ -92,7 +92,7 @@
 					</execution>
 				</executions>
 				<configuration>
-					<serverId>yanexus</serverId>
+					<serverId>yanexus-release</serverId>
 					<nexusUrl>https://alessandromodica.com:8081/nexus</nexusUrl>
 					<skipStaging>true</skipStaging>
 				</configuration>
