@@ -6,4 +6,4 @@
  
  	mvn deploy
  
- Per ora solo io e Jenkins abbiamo il "potere" di deployare!
+ Per ora solo Jenkins abbiamo il "potere" di deployare!
